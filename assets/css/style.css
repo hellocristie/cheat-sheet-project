@@ -1,22 +1,11 @@
-section {
-       background-color: green;
-     }
-     #text-section {
-       background-color: blue;
-     }
-     .red-text {
-       color: red;
-     }
-     h2.red-text {
-       font-size: 100px;
-}
 
-      header {
+
+      header, footer {
         background-color: #999;
-        margin: 0;
+        padding: 10px, 15px;
 
       }
-      header > h3 {
+      header > h3, footer > h5 {
       display: inline-block;
       margin: 10px;
       color:#333;
@@ -24,25 +13,31 @@ section {
 
 
 }
-      header > nav { float: right;
+      header > nav,
+      footer > nav { float: right;
                     list-style: none;
                     text-decoration: none;
+                    margin-right: 15px;
       }
 
-      header > nav > ul li {
+      header > nav > ul li,
+      footer > nav > ul li {
           float: left;
           margin: 10px;
           list-style: none;
           text-decoration: none; }
 
 
-          header > nav > ul li > a {
+      header > nav > ul li > a,
+      footer > nav > ul li > a {
               float: left;
               color: #333;
               font-family: helvetica,arial;
               text-decoration: none;
+
       }
-      header > nav > ul {
+      header > nav > ul,
+      footer > nav > ul {
           padding: 0;
           margin: 0;
           text-decoration: none;
@@ -53,7 +48,82 @@ section {
           body {
     margin: 0;
     padding: 0;
-} nav {
+}
 
+
+    main {
+        float: left;
+        background-color: f4f4f4;
+    }
+
+    footer {
+        clear: both;
+        background-color: pink;
+    }
+    aside {
+        float: left;
+        width: 20%;
+        background-color: white;
+        position: fixed;
+        margin-top: 40px;
+        font-family: helvetica, arial;
+
+}
+
+    header {
+    background-color: #999;
+    margin: 0;
+    position: fixed;
+    width: 100%;
+}
+
+main {
+    float: left;
+    /*Ajusta el padding para que quepa en el espacio*/
+    width: calc(80% - 60px);
+    background-color: #f4f4f4;
+    margin-left: 20%;
+    margin-top: 40px;
+    padding: 0 30px;
+}
+
+main > section {
+    margin-bottom: 60px;
+}
+
+aside > ol li > a {
+    text-decoration: none;
+    color: #333;
+    width: 80%;
+    display: block;
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: .4s;
+
+}
+
+/*aside > ol li > a:hover {
+    color: pink;
+}
+
+/*aside > ol li > a:visited {
+    color: purple;
+}*/
+
+aside > ol li {
+list-style: none;
+margin-bottom: 20px;
+}
+
+aside > ol li > a:hover{
+background-color: aquamarine;
+
+}
+ aside > ol
+ {padding: 0;
+ }
 
 }
